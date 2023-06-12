@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Evidence pojištění";
+}
+<div class="row">
+    <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Přehled pojištěných osob</h4>
+                <p class="card-text">Zobrazí přehled pojištěných osob</p>
+                <a class="btn btn-primary" asp-area="" asp-controller="Insureds" asp-action="Index">Přehled</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Přehled pojištění</h4>
+                <p class="card-text">Zobrazí přehled pojištění</p>
+                <a class="btn btn-success" asp-area="" asp-controller="Insurances" asp-action="Index">Přehled</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Nová pojištěná osoba</h4>
+                <p class="card-text">Vytvoří novou pojištěnou osobu</p>
+                <a class="btn btn-primary" asp-area="" asp-controller="Insureds" asp-action="Create">Nová osoba</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Nové pojištění</h4>
+                <p class="card-text">Vytvoří nové pojištění</p>
+                <a class="btn btn-success" asp-area="" asp-controller="Insurances" asp-action="Create">Nové pojištění</a>
+            </div>
+        </div>
+    </div>
+</div>
