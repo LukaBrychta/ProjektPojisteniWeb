@@ -7,43 +7,43 @@
 <h1>Editace pojištění osoby: <a asp-area="" asp-controller="Insureds" asp-action="Details" asp-route-id="@Model.InsuredId">@Html.DisplayFor(model => model.insured.FirstName) @Html.DisplayFor(model => model.insured.LastName)</a></h1>
 
 <hr />
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-        <div class="row">
-        <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">            
-                <label asp-for="TypeInsurance" class="control-label"></label>
-                <input asp-for="TypeInsurance" class="form-control" />
-                <span asp-validation-for="TypeInsurance" class="text-danger"></span>
-            </div>
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <div class="row">
         <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">
-                <label asp-for="Amount" class="control-label"></label>
-                <input asp-for="Amount" class="form-control" />
-                <span asp-validation-for="Amount" class="text-danger"></span>
-            </div>
+            <label asp-for="TypeInsurance" class="control-label"></label>
+            <input asp-for="TypeInsurance" class="form-control" />
+            <span asp-validation-for="TypeInsurance" class="text-danger"></span>
+        </div>
         <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">
-                <label asp-for="SubjectInsurance" class="control-label"></label>
-                <input asp-for="SubjectInsurance" class="form-control" />
-                <span asp-validation-for="SubjectInsurance" class="text-danger"></span>
-            </div>
+            <label asp-for="Amount" class="control-label"></label>
+            <input asp-for="Amount" class="form-control" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
         <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">
-                <label asp-for="ValidFrom" class="control-label"></label>
-                <input asp-for="ValidFrom" class="form-control" />
-                <span asp-validation-for="ValidFrom" class="text-danger"></span>
-            </div>
+            <label asp-for="SubjectInsurance" class="control-label"></label>
+            <input asp-for="SubjectInsurance" class="form-control" />
+            <span asp-validation-for="SubjectInsurance" class="text-danger"></span>
+        </div>
         <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">
-                <label asp-for="ValidUntil" class="control-label"></label>
-                <input asp-for="ValidUntil" class="form-control" />
-                <span asp-validation-for="ValidUntil" class="text-danger"></span>
-            </div>
+            <label asp-for="ValidFrom" class="control-label"></label>
+            <input asp-for="ValidFrom" class="form-control" />
+            <span asp-validation-for="ValidFrom" class="text-danger"></span>
+        </div>
         <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">
-                <label asp-for="InsuredId" class="control-label"></label>
-                <select asp-for="InsuredId" class="form-control" asp-items="ViewBag.InsuredId"></select>
-                <span asp-validation-for="InsuredId" class="text-danger"></span>
-            </div>
+            <label asp-for="ValidUntil" class="control-label"></label>
+            <input asp-for="ValidUntil" class="form-control" />
+            <span asp-validation-for="ValidUntil" class="text-danger"></span>
+        </div>
+        <div class="form-group col-sm-12 col-md-6 col-lg-4 py-1">
+            <label asp-for="InsuredId" class="control-label"></label>
+            <select asp-for="InsuredId" class="form-control" asp-items="ViewBag.InsuredId"></select>
+            <span asp-validation-for="InsuredId" class="text-danger"></span>
+        </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4 py-2">
                 <input type="submit" value="Uložit" class="btn btn-primary w-100" />
             </div>
         </div>
-        </form>
+</form>

@@ -6,36 +6,57 @@
 
 <h1>Přehled pojištěných osob</h1>
 
+<form asp-action="Index">
     <div class="row">
-        <table class="table col">
-            <thead>
-                <tr>
-                    <th>Jméno</th>
-                    <th>Bydliště</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)</a>
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Street) @Html.DisplayFor(modelItem => item.HouseNumber), @Html.DisplayFor(modelItem => item.City)
-                        </td>
-                        <td>
-                            <a class="btn button btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editovat</a>
-                            <a class="btn button btn-danger" asp-action="Delete" asp-route-id="@item.Id">Odstranit</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4">
-            <a class="btn button btn-primary w-100" asp-area="" asp-controller="Insureds" asp-action="Create">Nová pojištěná osoba</a>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1">
+            <label>Jméno</label>
+            <input class="form-control" type="text" name="searchFirstName" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1">
+            <label>Příjmení</label>
+            <input class="form-control" type="text" name="searchLastName" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1">
+            <label>Město</label>
+            <input class="form-control" type="text" name="searchCity" />
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 py-2">
+            <button type="submit" class="btn btn-outline-primary">Hledat</button>
+        </div>
+</form>
+
+<div class="row">
+    <table class="table col">
+        <thead>
+            <tr>
+                <th>Jméno</th>
+                <th>Bydliště</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Street) @Html.DisplayFor(modelItem => item.HouseNumber), @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        <a class="btn button btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editovat</a>
+                        <a class="btn button btn-danger" asp-action="Delete" asp-route-id="@item.Id">Odstranit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <a class="btn button btn-primary w-100" asp-area="" asp-controller="Insureds" asp-action="Create">Nová pojištěná osoba</a>
+    </div>
+</div>

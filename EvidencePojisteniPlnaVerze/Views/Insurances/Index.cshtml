@@ -8,40 +8,41 @@
 <div class="row">
 
     <table class="table col">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TypeInsurance)
-            </th>
-            <th>
-                Platnost
-            </th>
-            <th>
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypeInsurance)
+                </th>
+                <th>
+                    Platnost
+                </th>
+                <th>
                     @Html.DisplayNameFor(model => model.InsuredId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                    <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.TypeInsurance)</a>
-            </td>
-            <td>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.TypeInsurance)</a>
+                    </td>
+                    <td>
                         @Html.DisplayFor(modelItem => item.ValidFrom) - @Html.DisplayFor(modelItem => item.ValidUntil)
-            </td>
-            <td>
-                <a asp-area="" asp-controller="Insureds" asp-action="Details" asp-route-id="@item.InsuredId">@Html.DisplayFor(modelItem => item.insured.LastName)</a>
-            </td>
-            <td>
+                    </td>
+                    <td>
+                        <a asp-area="" asp-controller="Insureds" asp-action="Details" asp-route-id="@item.InsuredId">@Html.DisplayFor(modelItem => item.insured.LastName)</a>
+                    </td>
+                    <td>
                         <a class="btn button btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editovat</a>
                         <a class="btn button btn-danger" asp-action="Delete" asp-route-id="@item.Id">Odstranit</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-4">

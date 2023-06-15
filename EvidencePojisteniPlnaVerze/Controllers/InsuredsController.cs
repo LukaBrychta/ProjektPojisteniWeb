@@ -20,11 +20,28 @@ namespace EvidencePojisteniPlnaVerze.Controllers
         }
 
         // GET: Insureds
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchFirstName, string searchLastName, string searchCity)
         {
-              return _context.Insured != null ? 
-                          View(await _context.Insured.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Insured'  is null.");
+            var insureds = from i in _context.Insured
+                           select i;
+
+            if (!string.IsNullOrEmpty(searchFirstName))
+            {
+                insureds = insureds.Where(i => i.FirstName.Contains(searchFirstName));
+            }
+
+            if (!string.IsNullOrEmpty(searchLastName))
+            {
+                insureds = insureds.Where(i => i.LastName.Contains(searchLastName));
+            }
+
+            if (!string.IsNullOrEmpty(searchCity))
+            {
+                insureds = insureds.Where(i => i.City.Contains(searchCity));
+            }
+
+            return insureds != null ? View(await insureds.ToListAsync()) : Problem("Entity set 'ApplicationDbContext.Insured'  is null.");
+
         }
 
         // GET: Insureds/Details/5
@@ -136,7 +153,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             return View(insured);
         }
 
-                    // POST: Insureds/Delete/5
+        // POST: Insureds/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -152,7 +169,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             {
                 foreach (var ins in insurance)
                 {
-                _context.Insurance.Remove(ins);
+                    _context.Insurance.Remove(ins);
                 }
             }
 
@@ -186,7 +203,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
 
         private bool InsuredExists(int id)
         {
-          return (_context.Insured?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Insured?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace EvidencePojisteniPlnaVerze.Models
         public int Amount { get; set; }
         [Required]
         [Display(Name = "Předmět pojištění")]
-        public string SubjectInsurance {get; set; }
+        public string SubjectInsurance { get; set; }
         [Required]
         [Display(Name = "Platnost od"), DataType(DataType.Date)]
         public DateTime ValidFrom { get; set; }
@@ -26,7 +26,7 @@ namespace EvidencePojisteniPlnaVerze.Models
         public DateTime ValidUntil { get; set; }
         [Required]
         [Display(Name = "Pojištěná osoba")]
-        public int? InsuredId { get; set; }  
+        public int? InsuredId { get; set; }
         [Required]
         public Insured? insured { get; set; }
     }

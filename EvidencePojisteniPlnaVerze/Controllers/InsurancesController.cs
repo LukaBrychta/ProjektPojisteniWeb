@@ -63,7 +63,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
         public async Task<IActionResult> Create([Bind("Id,TypeInsurance,Amount,SubjectInsurance,ValidFrom,ValidUntil,InsuredId")] Insurance insurance)
         {
             if (ModelState.IsValid)
-            {                
+            {
                 _context.Add(insurance);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -158,14 +158,14 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             {
                 _context.Insurance.Remove(insurance);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool InsuranceExists(int id)
         {
-          return (_context.Insurance?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Insurance?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

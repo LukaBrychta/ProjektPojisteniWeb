@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EvidencePojisteniPlnaVerze
 build_property.RootNamespace = EvidencePojisteniPlnaVerze
-build_property.ProjectDir = C:\Users\brych\Desktop\ProjektPlnaVerze\ProjektPlnaVerze\EvidencePojisteniPlnaVerze\
+build_property.ProjectDir = C:\Users\brych\Desktop\projekty\ProjektPojisteniWeb\EvidencePojisteniPlnaVerze\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\brych\Desktop\ProjektPlnaVerze\ProjektPlnaVerze\EvidencePojisteniPlnaVerze
+build_property.MSBuildProjectDirectory = C:\Users\brych\Desktop\projekty\ProjektPojisteniWeb\EvidencePojisteniPlnaVerze
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Home/Index.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insurances/Create.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insurances/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insurances/Delete.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insurances/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insurances/Details.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insurances/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insurances/Edit.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insurances/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insurances/Index.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insurances/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insureds/Create.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insureds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJlZHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insureds/Delete.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insureds/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJlZHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insureds/Details.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insureds/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJlZHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insureds/Edit.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insureds/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJlZHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Insureds/Index.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Insureds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJlZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Shared/Error.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/_ViewImports.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/_ViewStart.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brych/Desktop/ProjektPlnaVerze/ProjektPlnaVerze/EvidencePojisteniPlnaVerze/Views/Shared/_Layout.cshtml]
+[C:/Users/brych/Desktop/projekty/ProjektPojisteniWeb/EvidencePojisteniPlnaVerze/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9u0nsloo9u

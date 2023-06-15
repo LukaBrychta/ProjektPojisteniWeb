@@ -11060,11 +11060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brych\\Desktop\\ProjektPlnaVerze\\ProjektPlnaVerze\\EvidencePojisteniPlnaVerze\\EvidencePojisteniPlnaVerze.csproj",
+      "projectUniqueName": "C:\\Users\\brych\\Desktop\\projekty\\ProjektPojisteniWeb\\EvidencePojisteniPlnaVerze\\EvidencePojisteniPlnaVerze.csproj",
       "projectName": "EvidencePojisteniPlnaVerze",
-      "projectPath": "C:\\Users\\brych\\Desktop\\ProjektPlnaVerze\\ProjektPlnaVerze\\EvidencePojisteniPlnaVerze\\EvidencePojisteniPlnaVerze.csproj",
+      "projectPath": "C:\\Users\\brych\\Desktop\\projekty\\ProjektPojisteniWeb\\EvidencePojisteniPlnaVerze\\EvidencePojisteniPlnaVerze.csproj",
       "packagesPath": "C:\\Users\\brych\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brych\\Desktop\\ProjektPlnaVerze\\ProjektPlnaVerze\\EvidencePojisteniPlnaVerze\\obj\\",
+      "outputPath": "C:\\Users\\brych\\Desktop\\projekty\\ProjektPojisteniWeb\\EvidencePojisteniPlnaVerze\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brych\\AppData\\Roaming\\NuGet\\NuGet.Config",

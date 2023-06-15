@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XCJRqc+bheerbgvfrM3PS9grKxFOW2yEx6q3zwMp5pCvLDPxc537quW+pvbS+mnzJdCXMkxGekfvZcCbHs/Xfw==",
+  "dgSpecHash": "XujjKS2ZlikMAk6PK6SESzXlGIIo2T2eu61fg524arvifgCBVuxD6qP7PmCmLxwm53ZnjObTGkvU6ukNC3XXpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brych\\Desktop\\ProjektPlnaVerze\\ProjektPlnaVerze\\EvidencePojisteniPlnaVerze\\EvidencePojisteniPlnaVerze.csproj",
+  "projectFilePath": "C:\\Users\\brych\\Desktop\\projekty\\ProjektPojisteniWeb\\EvidencePojisteniPlnaVerze\\EvidencePojisteniPlnaVerze.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brych\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\brych\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
