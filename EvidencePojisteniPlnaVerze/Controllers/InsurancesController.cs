@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using EvidencePojisteniPlnaVerze.Data;
+using EvidencePojisteniPlnaVerze.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using EvidencePojisteniPlnaVerze.Data;
-using EvidencePojisteniPlnaVerze.Models;
 
 namespace EvidencePojisteniPlnaVerze.Controllers
 {
@@ -20,13 +16,25 @@ namespace EvidencePojisteniPlnaVerze.Controllers
         }
 
         // GET: Insurances
-        public async Task<IActionResult> Index(int? id)
+        public async Task<IActionResult> Index(int? id, string searchTypeInsurance, string searchInsured)
         {
-            var applicationDbContext = _context.Insurance
-            .Include(i => i.insured)
-            .Where(i => i.InsuredId == id || id == null);
+            var insurance = _context.Insurance
+                .Include(i => i.insured)
+                .Where(i => i.InsuredId == id || id == null);
+            if (id > 0)
+                return View(await insurance.ToListAsync());
 
-            return View(await applicationDbContext.ToListAsync());
+            if (!string.IsNullOrEmpty(searchTypeInsurance))
+            {
+                insurance = insurance.Where(i => i.TypeInsurance.Contains(searchTypeInsurance));
+            }
+
+            if (!string.IsNullOrEmpty(searchInsured))
+            {
+                insurance = insurance.Where(i => i.insured.FirstName.Contains(searchInsured) || i.insured.LastName.Contains(searchInsured));
+            }
+
+            return insurance != null ? View(await insurance.ToListAsync()) : Problem("Entity set 'ApplicationDbContext.Insured'  is null.");
         }
 
         // GET: Insurances/Details/5

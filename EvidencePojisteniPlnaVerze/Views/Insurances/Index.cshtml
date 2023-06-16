@@ -5,6 +5,24 @@
 }
 
 <h1>Přehled pojištění</h1>
+
+<form asp-action="Index">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1">
+            <label>Typ pojištění</label>
+            <input class="form-control" type="text" name="searchTypeInsurance" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1">
+            <label>Jméno pojištěné osoby</label>
+            <input class="form-control" type="text" name="searchInsured" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 py-2">
+            <button type="submit" class="btn btn-outline-primary">Hledat</button>
+        </div>
+</form>
+
 <div class="row">
 
     <table class="table col">
