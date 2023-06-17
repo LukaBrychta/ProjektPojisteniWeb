@@ -16,13 +16,10 @@ namespace EvidencePojisteniPlnaVerze.Controllers
         }
 
         // GET: Insurances
-        public async Task<IActionResult> Index(int? id, string searchTypeInsurance, string searchInsured)
+        public async Task<IActionResult> Index(string searchTypeInsurance, string searchInsured)
         {
-            var insurance = _context.Insurance
-                .Include(i => i.insured)
-                .Where(i => i.InsuredId == id || id == null);
-            if (id > 0)
-                return View(await insurance.ToListAsync());
+            IQueryable<Insurance> insurance = _context.Insurance
+                            .Include(i => i.insured);
 
             if (!string.IsNullOrEmpty(searchTypeInsurance))
             {

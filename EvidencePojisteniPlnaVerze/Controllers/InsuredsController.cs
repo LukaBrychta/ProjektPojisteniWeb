@@ -54,13 +54,34 @@ namespace EvidencePojisteniPlnaVerze.Controllers
 
             var insured = await _context.Insured
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (insured == null)
             {
                 return NotFound();
             }
 
+            ViewBag.insurances = _context.Insurance
+                .Where(i => i.InsuredId == id);
+
             return View(insured);
         }
+
+        //public async Task<IActionResult> Details(int? id)
+        //{
+        //    if (id == null || _context.Insured == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var insured = await _context.Insured
+        //        .FirstOrDefaultAsync(m => m.Id == id);
+        //    if (insured == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(insured);
+        //}
 
         // GET: Insureds/Create
         public IActionResult Create()

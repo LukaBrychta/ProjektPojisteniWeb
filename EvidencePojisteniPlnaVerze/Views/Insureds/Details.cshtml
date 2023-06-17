@@ -8,6 +8,8 @@
 <h1>@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</h1>
 <hr />
 
+
+
 <div class="row">
     <div class="col">
         <img src="~/images/person.png" />
@@ -64,8 +66,38 @@
     <div class="col-sm-12 col-md-6 col-lg py-2">
         <a type="button" class="btn w-100 btn-success text-nowrap" asp-area="" asp-controller="Insurances" asp-action="Create">Nové pojištění</a>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg py-2">
-        <a type="button" class="btn w-100 btn-success text-nowrap" asp-area="" asp-controller="Insurances" asp-action="Index" asp-route-id="@Model?.Id">Přehled pojištění</a>
-    </div>
 </div>
 
+<div class="row">
+
+    <table class="table col">
+        <thead>
+            <tr>
+                <th>
+                    Pojištění
+                </th>
+                <th>
+                    Platnost
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @ViewBag.Insurances)
+            {
+                <tr>
+                    <td>
+                        <a asp-controller="Insurances" asp-action="Details" asp-route-id="@item.Id">@item.TypeInsurance</a>                        
+                    </td>
+                    <td>
+                        @item.ValidFrom.ToString("dd.MM.yyyy") - @item.ValidUntil.ToString("dd.MM.yyyy")
+                    </td>
+                    <td>
+                        <a class="btn button btn-warning" asp-controller="Insurances" asp-action="Edit" asp-route-id="@item.Id">Editovat</a>
+                        <a class="btn button btn-danger" asp-controller="Insurances" asp-action="Delete" asp-route-id="@item.Id">Odstranit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
