@@ -5,8 +5,7 @@
 }
 
 <h1>Přehled pojištěných osob</h1>
-
-<form asp-action="Index">
+<form asp-action="Index" method="get">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 py-1">
             <label>Jméno</label>
@@ -24,6 +23,7 @@
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
             <button type="submit" class="btn btn-outline-primary">Hledat</button>
+            <a class="btn button btn-outline-danger" asp-action="Index">Reset</a>
         </div>
 </form>
 
@@ -39,6 +39,7 @@
         <tbody>
             @foreach (var item in Model)
             {
+
                 <tr>
                     <td>
                         <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)</a>
@@ -52,8 +53,12 @@
                     </td>
                 </tr>
             }
-        </tbody>
+            <tbody/>
     </table>
+    @if (ViewBag.PocetZaznamu < 1)
+    {
+        <p class="alert-danger">Záznam nenalezen</p>
+    }
 </div>
 <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-4">

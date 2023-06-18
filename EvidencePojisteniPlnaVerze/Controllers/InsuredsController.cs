@@ -39,6 +39,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             {
                 insureds = insureds.Where(i => i.City.Contains(searchCity));
             }
+            ViewBag.pocetZaznamu = insureds.Count();
 
             return insureds != null ? View(await insureds.ToListAsync()) : Problem("Entity set 'ApplicationDbContext.Insured'  is null.");
 
@@ -66,23 +67,6 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             return View(insured);
         }
 
-        //public async Task<IActionResult> Details(int? id)
-        //{
-        //    if (id == null || _context.Insured == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    var insured = await _context.Insured
-        //        .FirstOrDefaultAsync(m => m.Id == id);
-        //    if (insured == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(insured);
-        //}
-
         // GET: Insureds/Create
         public IActionResult Create()
         {
@@ -100,7 +84,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             {
                 _context.Add(insured);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id = insured.Id });
             }
             return View(insured);
         }
@@ -151,7 +135,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id = insured.Id });
             }
             return View(insured);
         }

@@ -4,25 +4,17 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Opravdu chcete smazat pojištění osoby: <a asp-area="" asp-controller="Insureds" asp-action="Details" asp-route-id="@Model.InsuredId">@Html.DisplayFor(model => model.insured.FirstName) @Html.DisplayFor(model => model.insured.LastName)</a> ?</h1>
+<h1>Opravdu chcete odstranit @Html.DisplayNameFor(model => model.TypeInsurance): @Html.DisplayFor(model => model.TypeInsurance)?</h1>
 
 <hr />
 <div>
     <dl class="row">
         <div class="col-6">
             <dt>
-                @Html.DisplayNameFor(model => model.TypeInsurance):
+                Pojištěná osoba:
             </dt>
             <dd>
-                @Html.DisplayFor(model => model.TypeInsurance)
-            </dd>
-        </div>
-        <div class="col-6">
-            <dt>
-                @Html.DisplayNameFor(model => model.Amount):
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.Amount)
+                <a asp-area="" asp-controller="Insureds" asp-action="Details" asp-route-id="@Model.InsuredId">@Html.DisplayFor(model => model.insured.FirstName) @Html.DisplayFor(model => model.insured.LastName)</a>
             </dd>
         </div>
         <div class="col-6">
@@ -49,7 +41,16 @@
                 @Html.DisplayFor(model => model.ValidUntil)
             </dd>
         </div>
+        <div class="col-6">
+            <dt>
+                @Html.DisplayNameFor(model => model.Amount):
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Amount)
+            </dd>
+        </div>
     </dl>
+</div>
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
             <form asp-action="Delete">

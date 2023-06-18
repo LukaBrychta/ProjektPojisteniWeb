@@ -30,6 +30,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             {
                 insurance = insurance.Where(i => i.insured.FirstName.Contains(searchInsured) || i.insured.LastName.Contains(searchInsured));
             }
+            ViewBag.pocetZaznamu = insurance.Count();
 
             return insurance != null ? View(await insurance.ToListAsync()) : Problem("Entity set 'ApplicationDbContext.Insured'  is null.");
         }
@@ -71,7 +72,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
             {
                 _context.Add(insurance);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id = insurance.Id });
             }
             ViewData["InsuredId"] = new SelectList(_context.Insured, "Id", "Id", insurance.InsuredId);
             return View(insurance);
@@ -124,7 +125,7 @@ namespace EvidencePojisteniPlnaVerze.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id = insurance.Id });
             }
             ViewData["InsuredId"] = new SelectList(_context.Insured, "Id", "LastName", insurance.InsuredId);
             return View(insurance);
