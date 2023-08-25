@@ -15,7 +15,7 @@
 - Umožňuje vyhledávání pojištěnce podle jména, příjmení, města
 - Umožňuje vyhledávání pojištění podle jména pojištěnce, typu pojištění
 
-<h2>Deskopová verze</h2>
+<h2>Desktopová verze</h2>
 
 ![ProjektPojisteniWeb_1](https://github.com/LukaBrychta/ProjektPojisteniWeb/assets/134295729/704a9c30-a897-4327-9206-1ed7a547e0a6)
 ![ProjetkPojisteniWeb_3](https://github.com/LukaBrychta/ProjektPojisteniWeb/assets/134295729/98a4d160-4555-493d-a2f2-2855e3406598)
